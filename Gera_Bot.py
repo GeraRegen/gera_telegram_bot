@@ -16,6 +16,8 @@ logger = logging.getLogger(__name__)
 # Имя файла базы данных
 DB_FILE = "members.db"
 
+def init_db():
+    conn = sqlite3.connect(DB_FILE)
 
 # ========== РАБОТА С БАЗОЙ ДАННЫХ ==========
 def create_connection():
